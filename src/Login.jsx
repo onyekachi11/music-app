@@ -5,7 +5,7 @@ import ApiCalla from './components/ApiCalla';
 import img from './assets/logo.png'
 
 
-const REDIRECT_URL = 'http://localhost:5173/'
+const REDIRECT_URL = 'https://music-app-mocha.vercel.app/'
 const scope = 'user-read-private user-read-email playlist-read-collaborative playlist-read-private user-read-playback-state user-modify-playback-state user-read-currently-playing user-read-playback-position user-top-read user-read-recently-played';
 const CLIENT_ID = 'f06a30565b594b098046534de5d3a1cb';
 

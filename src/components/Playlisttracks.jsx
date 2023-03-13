@@ -11,7 +11,6 @@ const Playlisttracks = () => {
     const{trackName, setTrackName}=useContext(Context)
     const{trackArtist, setArtist}=useContext(Context)
 
-    // const audioElement = new Audio(preview_url)
     
 
 
@@ -29,15 +28,12 @@ const Playlisttracks = () => {
               {allTracks && allTracks.map((item,i)=>{
                 return(
                   <div key={item.track.id}className='track-row' onClick={()=>{
-                    // preview_url == '' && 
                     setPreview_url(item.track.preview_url)
-                    // preview_url != '' && setPreview_url('') 
                     setType(item.track.type)
                     setUriId(item.track.id)
                     setTrackName(item.track.name)
                     setArtist(item.track.artists.map((a,b)=> a.name).join(','))
                     console.log(item.track.images.map((a,b)=> a.url))
-                    // audioElement.play()
                   }}>
                   <span className='row'>
                     {i+1}

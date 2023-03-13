@@ -51,14 +51,6 @@ const ApiCalla = () => {
         .then(res => res.json())
         .then(data => setAllTracks(data.items))
     },[playlist])
-
-    // console.log(accessToken)
-    // console.log(playlist.id)
-    // console.log(allTracks)
-
-//   return (
-//     <div>ApiCalla</div>
-//   )
 }
 
 export default ApiCalla
